@@ -1,0 +1,25 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: hsl(0, 0%, 8%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.card {
+  width: 20%;
+  height: 70%;
+  margin: auto;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
