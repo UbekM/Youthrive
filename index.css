@@ -16,7 +16,7 @@ section {
 
 .card {
   width: 20%;
-  height: 70%;
+  max-height: 70%;
   margin: auto;
   background-color: hsl(0, 0%, 12%);
   border-radius: 10px;
@@ -31,7 +31,9 @@ section {
   gap: 10px;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 7px;
 }
+
 .person {
   display: flex;
   flex-direction: column;
@@ -47,8 +49,9 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.card button:hover {
   background-color: hsl(75, 94%, 57%);
+  color: black !important;
 }
 
 a {
@@ -56,19 +59,16 @@ a {
   color: white;
 }
 
-a:hover {
-}
-
 h4 {
   color: hsl(75, 94%, 57%);
-  margin-bottom: 10px;
 }
 
 img {
+  margin-top: 5px;
   border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -81,4 +81,39 @@ p {
 h3 {
   color: white;
   margin-bottom: 5px;
+}
+
+form {
+  width: 100%;
+}
+
+@media (min-width: 160px) and (max-width: 426px) {
+  section {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .card {
+    width: 75%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+  .card {
+    width: 40%;
+    max-height: 100%;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+  section {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .card {
+    width: 30%;
+    max-height: 100%;
+  }
 }
