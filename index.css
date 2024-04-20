@@ -9,14 +9,14 @@
 
 section {
   background-color: hsl(0, 0%, 8%);
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
 }
 
 .card {
-  width: 20%;
-  max-height: 70%;
+  min-width: 20%;
+  min-height: 70%;
   margin: auto;
   background-color: hsl(0, 0%, 12%);
   border-radius: 10px;
@@ -68,6 +68,7 @@ a {
 
 h4 {
   color: hsl(75, 94%, 57%);
+  text-align: center;
 }
 
 img {
@@ -85,9 +86,11 @@ p {
   font-size: 12px;
 }
 
-h3 {
+h1 {
+  font-size: 1.2rem;
   color: white;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 form {
@@ -95,32 +98,22 @@ form {
 }
 
 @media (min-width: 160px) and (max-width: 426px) {
-  section {
-    width: 100vw;
-    height: 100dvh;
-  }
-
   .card {
-    width: 75%;
+    min-width: 75%;
     max-height: 100%;
   }
 }
 
 @media (min-width: 427px) and (max-width: 769px) {
   .card {
-    width: 40%;
-    max-height: 100%;
+    min-width: 40%;
+    min-height: 100%;
   }
 }
 
 @media (min-width: 770px) and (max-width: 1025px) {
-  section {
-    width: 100vw;
-    height: 100dvh;
-  }
-
   .card {
-    width: 30%;
-    max-height: 100%;
+    min-width: 35%;
+    min-height: 100%;
   }
 }
