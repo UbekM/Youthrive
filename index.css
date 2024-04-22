@@ -51,6 +51,7 @@ button {
 
 button:hover {
   background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
 }
 
 button:hover a {
@@ -59,6 +60,7 @@ button:hover a {
 
 a:hover {
   color: black;
+  cursor: pointer;
 }
 
 a {
@@ -104,16 +106,16 @@ form {
   }
 }
 
-@media (min-width: 427px) and (max-width: 769px) {
+@media (min-width: 427px) and (max-width: 700px) {
   .card {
     min-width: 40%;
     min-height: 100%;
   }
 }
 
-@media (min-width: 770px) and (max-width: 1025px) {
+@media (min-width: 701px) and (max-width: 1025px) {
   .card {
-    min-width: 35%;
+    min-width: 40%;
     min-height: 100%;
   }
 }
